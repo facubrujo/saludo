@@ -62,6 +62,8 @@
     z-index:2;
   }
   
+  
+
   pre:last-child:after {
     animation:blink 1s infinite;
     content:"_";
@@ -101,4 +103,40 @@
     50% {
       opacity:0;
     }
+  }
+
+
+
+
+  @media screen and (max-width: 768px) {
+    p, pre {
+      font-size: 0.9rem;
+      text-align: start;
+      justify-content: flex-start
+    }
+    .container{
+        justify-content: flex-start
+    }
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    p, pre {
+      font-size: 1rem;
+      text-align: start;
+      
+    }
+    .container{
+        justify-content: flex-start
+    }
+  }
+  
+  /* Estilos para pantallas grandes */
+  @media screen and (min-width: 1025px) {
+    p, pre {
+      font-size: 1.1rem;
+      text-align: start;
+      
+    }
+
   }
